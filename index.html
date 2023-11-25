@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextEditor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Text Editor</h1>
+    </div>
+    <div class="menu">
+        <div class="bold">
+            <button id="bold_btn" onclick="bold()" ondblclick="boldrm()">
+                <p>Bold</p>
+            </button>
+        </div>
+        <div class="cursive">
+            <button id="italic_btn" onclick="italic()" ondblclick="italicrm()">
+                <em>Italic</em>
+            </button>
+        </div>
+        <div class="font_size">
+            <input type="number" name="font-size" id="font-size" placeholder="Font Size" onchange="fontSize()">
+        </div>
+        <div class="text_alignment">
+            <button id="left_align_btn" onclick="left()">
+                <i class="fa-solid fa-align-left"></i>
+            </button>
+            <button id="center_align_btn" onclick="center()">
+                <i class="fa-solid fa-align-center"></i>
+            </button>
+            <button id="right_align_btn" onclick="right()">
+                <i class="fa-solid fa-align-right"></i>
+            </button>
+        </div>
+        <div class="font_families">
+            <select name="font_families" id="font_families" value="Font Styles" onchange="font_style()">
+                <option value="sans-serif" disabled selected>Font Styles</option>
+                <option value="sans-serif">Sans-Serif</option>
+                <option value="Verdana, Geneva, Tahoma, sans-serif">Verdana</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="monospace">Monospace</option>
+                <option value="Arial, Helvetica, sans-serif">Arial</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="cursive">Cursive</option>
+            </select>
+        </div>
+        <div class="upper_case">
+            <button id="upper_btn" onclick="upper()" ondblclick="upperrm()">
+                Upper Case
+            </button>
+        </div>
+        <div class="lower_case">
+            <button id="lower_btn" onclick="lower()" ondblclick="lowerrm()">
+                Lower Case
+            </button>
+        </div>
+        <div class="clear_text">
+            <button id="clear_btn" onclick="clear_txt()">
+                Clear Text
+            </button>
+        </div>
+    </div>
+    <div class="text_area">
+        <textarea name="text" id="text" placeholder="Your Text Here"></textarea>
+    </div>
+</body>
+</html>
