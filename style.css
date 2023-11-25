@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ebebeb;
+    overflow: hidden;
+}
+.header{
+    background-color: #fff;
+    color: rgb(240, 71, 255);
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    font-size: x-large;
+    padding: 20px;
+    box-shadow: 2px 2px 10px #dfdede;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    margin: 20px auto;
+}
+button{
+    width: 70px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid rgb(240, 71, 255);
+    font-size: large;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: sans-serif;
+    padding: 5px 0px;
+    box-shadow: 1px 1px 3px rgb(240, 71, 255)
+}
+button:hover{
+    background-color: rgb(240, 71, 255);
+    color: #fff;
+    transition: all 0.5s linear;
+}
+.font_size sub{
+    font-family:sans-serif;
+}
+#font-size{
+    border: 1px solid rgb(240, 71, 255);
+    outline: none;
+    box-shadow: 1px 1px 3px rgb(240, 71, 255);
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+}
+#font-size:hover{
+    background-color: rgb(240, 71, 255);
+    color: #fff;
+    transition: all 0.5s linear;
+}
+::placeholder{
+    color: #000;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: larger;
+    padding-top: 130px;
+}
+.text_alignment{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.font_families{
+    width: 150px;
+    height: 30px;
+}
+.font_families select{
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    font-family: sans-serif;
+    border: 1px solid rgb(240, 71, 255);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgb(240, 71, 255);
+    outline: none;
+    cursor: pointer;
+}
+#upper_btn, #lower_btn, #clear_btn{
+    width: 120px;
+}
+#left_align_btn{
+    text-align: left;
+    padding-left:5px ;
+}
+#center_align_btn{
+    text-align: center;
+}
+#right_align_btn{
+    text-align: right;
+    padding-right:5px ;
+}
+#download_btn{
+    width: max-content;
+    padding: 5px 15px;
+}
+textarea{
+    resize: none;
+    width: 750px;
+    height: 300px;
+    margin-top: 5%;
+    font-family: serif;
+    padding: 5px;
+    box-shadow: 2px 2px 10px rgb(240, 71, 255);
+    border-radius: 5px;
+    outline: none;
+}
+.text_area{
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+
+
+
